@@ -1,5 +1,12 @@
 # Cloud Cost & FinOps Platform
 
+## Overview
+
+A small FinOps service that compares cloud spend against a budget. A `POST /costs` request sends cost lines, the service sums them and sets an `over_budget` flag when the total exceeds the budget. It works only on the posted data and needs no cloud login. A versioned `/v1` ops API adds workspaces, tenant isolation, job approval and audit records.
+
+- **Built with:** Python, pytest, Docker, GitHub Actions
+- **Scope:** Local laptop lab with tests; no cloud account access, no hosted model, and production apply is refused.
+
 <!-- project-guide:start -->
 ## Project guide
 
